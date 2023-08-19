@@ -1,9 +1,37 @@
-@import "_scss/bootstrap";
+@import "_scss/bootstrap/bootstrap";
+@import "_scss/fontawesome/fontawesome";
+@import "_scss/fontawesome/solid";
+@import "_scss/fontawesome/regular";
+@import "_scss/fontawesome/brands";
+
+:root {
+  --bs-body-bg: #f7f7f8;
+}
 
 body {
-  //background-color: #0b5ed7;
+
+  @font-face {
+    font-family: '';
+  }
+  .header-bad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   #index {
     justify-content: center;
     text-align: center;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    list-style-type: none;
+
+    li {
+      padding: 20px;
+    }
   }
 }

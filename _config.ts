@@ -13,6 +13,7 @@ const site = lume({
 });
 site.copy("static", "static");
 site.loadAssets([".css"]);
+site.ignore("tools");
 
 site.use(jsx());
 
